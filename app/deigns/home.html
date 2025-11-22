@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Architecture Landing Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a',   // Azul oscuro
+                        secondary: '#e67e22', // Naranja
+                        accent: '#3b82f6',    // Azul claro
+                        dark: '#111827',      // Casi negro para footer
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="bg-[#0f2645] text-white py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="border-2 border-white p-1 rounded-sm">
+                    <i class="fas fa-gem text-xl"></i>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="font-bold text-lg tracking-wider">CRTDHLELAIVIN</span>
+                    <span class="text-[10px] text-gray-400 tracking-widest">ARCHITECTURE</span>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="hidden md:flex gap-6 text-sm font-light uppercase tracking-wide">
+                <a href="#" class="hover:text-secondary text-secondary">Main</a>
+                <a href="#" class="hover:text-secondary">About</a>
+                <a href="#" class="hover:text-secondary">Equipment</a>
+                <a href="#" class="hover:text-secondary">Seller</a>
+                <a href="#" class="hover:text-secondary">News</a>
+            </div>
+
+            <!-- Search / Action -->
+            <div class="hidden md:flex">
+                <input type="text" placeholder="Search..." class="px-3 py-1 text-black text-sm rounded-l-md focus:outline-none">
+                <button class="bg-secondary px-4 py-1 text-sm font-bold rounded-r-md hover:bg-orange-600">SEARCH</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative w-full h-[600px] md:h-[700px] overflow-hidden">
+        <!-- Background Image -->
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+             alt="Modern Building" class="absolute inset-0 w-full h-full object-cover object-center">
+        
+        <!-- Overlay Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center">
+            <div class="max-w-xl">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
+                    We Design <br> Desirability
+                </h1>
+                <p class="text-gray-200 mb-8 text-lg font-light">
+                    Some lorem dolor theons astronal structure doms d'ignoce antere fi NOTOAS. For environment great previous as redhig olrug fen tet ro.
+                </p>
+                <button class="bg-secondary text-white px-8 py-3 rounded shadow-lg font-bold uppercase tracking-wider hover:bg-orange-600 transition">
+                    Obsst Roone
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- FEATURES BAR (Blue Strip) -->
+    <section class="bg-[#2c4a6d] text-white py-10">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+            
+            <!-- Item 1 -->
+            <div class="flex flex-col md:flex-row items-center gap-4">
+                <i class="fas fa-drafting-compass text-4xl opacity-80"></i>
+                <div>
+                    <h4 class="font-bold">Oremm Design</h4>
+                    <p class="text-xs text-gray-300">Arsosit gpxf thesub connem oiatel storug becec.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex flex-col md:flex-row items-center gap-4">
+                <i class="fas fa-desktop text-4xl opacity-80"></i>
+                <div>
+                    <h4 class="font-bold">Locmt Ste</h4>
+                    <p class="text-xs text-gray-300">Ansefh ulliys secub enyc bating etiowslrei ciersra.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex flex-col md:flex-row items-center gap-4">
+                <i class="far fa-building text-4xl opacity-80"></i>
+                <div>
+                    <h4 class="font-bold">Thapt Ostrase</h4>
+                    <p class="text-xs text-gray-300">Comaarst amipi eu-is htositses Tlamsei ovauire.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="flex flex-col md:flex-row items-center gap-4">
+                <i class="fas fa-credit-card text-4xl opacity-80"></i>
+                <div>
+                    <h4 class="font-bold">Uundhe Tvemay</h4>
+                    <p class="text-xs text-gray-300">Ssstiue riemgne es tiar ossistan sme cevore eranda.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION 1 (Gallery) -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-6">
+                <h2 class="text-3xl font-bold text-[#2c4a6d]">Content Nove Ning</h2>
+                <p class="text-gray-400 text-sm uppercase tracking-widest hidden md:block">Indrke e wei ntt ovoki pytorkond gulm</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <!-- Image 1 -->
+                <div class="h-64 overflow-hidden rounded shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Park" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <!-- Image 2 -->
+                <div class="h-64 overflow-hidden rounded shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Skyscrapers" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <!-- Image 3 -->
+                <div class="h-64 overflow-hidden rounded shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1565352688-769934f152a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Night City" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+            </div>
+
+            <!-- Action Bar (The dark/blue strip) -->
+            <div class="flex flex-col md:flex-row w-full text-white font-bold text-sm uppercase text-center">
+                <div class="bg-gray-600 py-4 px-6 flex-1 hover:bg-gray-700 cursor-pointer flex items-center justify-center">
+                    Gdkt Sittaame Toohon
+                </div>
+                <div class="bg-[#1e3a8a] py-4 px-6 flex-1 hover:bg-blue-900 cursor-pointer flex items-center justify-center border-l border-gray-500 md:border-l-0">
+                    Olue Tigce At Bemdug
+                </div>
+                <div class="bg-[#0ea5e9] py-4 px-6 flex-1 hover:bg-sky-600 cursor-pointer flex items-center justify-center">
+                    Serekn Ai Srirte
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 (Info Cards) -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-[#2c4a6d] mb-10">Sen Seowes Tnogas</h2>
+
+            <!-- Top Row Images -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Col 1 -->
+                <div class="flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1572375992501-4b0892d50c69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover rounded mb-3" alt="Building">
+                    <a href="#" class="text-center text-cyan-600 font-semibold text-sm uppercase tracking-wide">Cur Niace Ryctiens</a>
+                </div>
+                <!-- Col 2 -->
+                <div class="flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover rounded mb-3" alt="Modern Office">
+                    <a href="#" class="text-center text-cyan-600 font-semibold text-sm uppercase tracking-wide">Wech Tenv Uef Lies Cait</a>
+                </div>
+                <!-- Col 3 -->
+                <div class="flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover rounded mb-3" alt="Meeting">
+                    <a href="#" class="text-center text-cyan-600 font-semibold text-sm uppercase tracking-wide">Lege 1370 Snyutwa 'S</a>
+                </div>
+            </div>
+
+            <!-- Bottom Row Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-blue-50 p-6 rounded text-center flex flex-col items-center">
+                    <div class="bg-[#2c4a6d] w-10 h-10 flex items-center justify-center rounded text-white mb-4">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Llornere on The Onredriess</h3>
+                    <p class="text-xs text-gray-500 mb-6 px-4">Sunnait pseont otave E. Enrarryvet bt be orenjor Autriors Velkorhson.</p>
+                    <button class="w-full bg-secondary text-white py-3 font-bold text-sm uppercase rounded hover:bg-orange-600 transition">
+                        Tvisuiliie Kse Oee Ktten
+                    </button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-blue-50 p-6 rounded text-center flex flex-col items-center">
+                    <div class="bg-[#2c4a6d] w-10 h-10 flex items-center justify-center rounded text-white mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Ecksa Mcsi Esulyne Raci</h3>
+                    <p class="text-xs text-gray-500 mb-6 px-4">Yorkorong 2 461, bny be bunre Fo aemsid britone Caresine Neaon le larsonbut.</p>
+                    <button class="w-full bg-secondary text-white py-3 font-bold text-sm uppercase rounded hover:bg-orange-600 transition">
+                        Einriz Tie
+                    </button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-blue-50 p-6 rounded text-center flex flex-col items-center">
+                    <div class="bg-[#2c4a6d] w-10 h-10 flex items-center justify-center rounded text-white mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Coheealieri C locnso Siattsyaiye Font</h3>
+                    <p class="text-xs text-gray-500 mb-6 px-4">Twre vilat Bensoopnaasg iris torbie bxtarrig dinito Distnim. Fymol ble sipierwlein.</p>
+                    <button class="w-full bg-secondary text-white py-3 font-bold text-sm uppercase rounded hover:bg-orange-600 transition">
+                        Cofesift Wien
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1c2e44] text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Oree Rarelgier-</h3>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li><a href="#" class="hover:text-white">Kremser Incau</a></li>
+                        <li><a href="#" class="hover:text-white">Lindberg-rwahalun</a></li>
+                        <li><a href="#" class="hover:text-white">Joarenes Ujmonogrc dresr</a></li>
+                        <li><a href="#" class="hover:text-white">Best abraul services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Condl Seues</h3>
+                    <p class="text-sm text-gray-400 mb-2">Baoos sur hastssserato</p>
+                    <p class="text-xs text-gray-500 mb-4">Waramet nveisiers xenier ibonneti conset brg exiorency desys vo Linrws naiz a exwnimag sseresio</p>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Weselucs ns</h3>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li class="flex items-center gap-2"><i class="far fa-circle text-[8px]"></i> Critsure Finawrgymsie</li>
+                        <li class="flex items-center gap-2"><i class="far fa-circle text-[8px]"></i> Ecuinst</li>
+                        <li class="flex items-center gap-2"><i class="far fa-circle text-[8px]"></i> Cenarture</li>
+                        <li class="flex items-center gap-2"><i class="far fa-circle text-[8px]"></i> Iowggs</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">DDECUH</h3>
+                    <ul class="text-sm text-gray-400 space-y-3">
+                        <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> Geconsia</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-envelope"></i> Giuiersb 290700</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-phone"></i> Cromereps</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-link"></i> Comuniaracunsiunrasi Boes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <div class="flex gap-6 mb-4 md:mb-0">
+                    <a href="#" class="flex items-center gap-2 hover:text-white"><i class="fab fa-instagram"></i> CHLLATOE.30 ST.LHV</a>
+                    <a href="#" class="hover:text-white">OPKCEETIBFHKJ</a>
+                    <a href="#" class="hover:text-white">CMACBE NRO. IDK AGE GSEK</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span>Sutreyazts Entedoe12 lie</span>
+                    <div class="flex gap-2">
+                        <i class="fab fa-facebook bg-blue-600 text-white p-1 rounded cursor-pointer"></i>
+                        <i class="fab fa-youtube bg-red-600 text-white p-1 rounded cursor-pointer"></i>
+                        <i class="fab fa-linkedin bg-blue-800 text-white p-1 rounded cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
