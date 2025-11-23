@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Inmobiliaria Querétaro | Propiedades de Lujo y Exclusivas en Qro",
+  title: "Mi Éxito Inmobiliario Querétaro | Propiedades de Lujo y Exclusivas en Qro",
   description: "Descubre propiedades exclusivas, residencias de lujo y las mejores oportunidades de inversión en Querétaro. Más de 15 años de experiencia en bienes raíces.",
   keywords: [
     "inmobiliaria querétaro",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     "residencias exclusivas querétaro",
     "venta de casas querétaro"
   ],
-  authors: [{ name: "Inmobiliaria Querétaro" }],
-  creator: "Inmobiliaria Querétaro",
-  publisher: "Inmobiliaria Querétaro",
+  authors: [{ name: "Mi Éxito Inmobiliario Querétaro" }],
+  creator: "Mi Éxito Inmobiliario Querétaro",
+  publisher: "Mi Éxito Inmobiliario Querétaro",
   metadataBase: new URL("https://inmobiliariaqro.com"),
   alternates: {
     canonical: "/",
@@ -39,21 +39,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_MX",
     url: "https://inmobiliariaqro.com",
-    title: "Inmobiliaria Querétaro | Propiedades de Lujo y Exclusivas",
+    title: "Mi Éxito Inmobiliario Querétaro | Propiedades de Lujo y Exclusivas",
     description: "Descubre propiedades exclusivas, residencias de lujo y las mejores oportunidades de inversión en Querétaro. Más de 15 años de experiencia.",
-    siteName: "Inmobiliaria Querétaro",
+    siteName: "Mi Éxito Inmobiliario Querétaro",
     images: [
       {
         url: "/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Inmobiliaria Querétaro - Propiedades Exclusivas",
+        alt: "Mi Éxito Inmobiliario Querétaro - Propiedades Exclusivas",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Inmobiliaria Querétaro | Propiedades de Lujo y Exclusivas",
+    title: "Mi Éxito Inmobiliario Querétaro | Propiedades de Lujo y Exclusivas",
     description: "Descubre propiedades exclusivas y las mejores oportunidades de inversión en Querétaro. Más de 15 años de experiencia.",
     images: ["/logo.jpg"],
     creator: "@inmobiliariaqro",
@@ -102,6 +102,7 @@ export default function RootLayout({
         <meta name="geo.placename" content="Querétaro" />
         <meta name="geo.position" content="20.588793;-100.389888" />
         <meta name="ICBM" content="20.588793, -100.389888" />
+        <script async src="//www.instagram.com/embed.js"></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

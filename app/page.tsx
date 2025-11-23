@@ -5,10 +5,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Inicio | Inmobiliaria Querétaro - Propiedades Exclusivas",
+  title: "Inicio | Mi Éxito Inmobiliario Querétaro - Propiedades Exclusivas",
   description: "Bienvenido a la mejor inmobiliaria de Querétaro. Encuentra casas, departamentos y propiedades comerciales de lujo. Más de 500 propiedades y 15 años de experiencia.",
   openGraph: {
-    title: "Inmobiliaria Querétaro - Propiedades Exclusivas",
+    title: "Mi Éxito Inmobiliario Querétaro - Propiedades Exclusivas",
     description: "Bienvenido a la mejor inmobiliaria de Querétaro. Encuentra tu propiedad ideal entre más de 500 opciones.",
     url: "https://inmobiliariaqro.com",
     images: [{ url: "/logo.jpg" }],

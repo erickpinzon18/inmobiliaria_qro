@@ -313,9 +313,11 @@ export default function PropiedadesPage() {
                             ${(propiedad.precio / 1000000).toFixed(1)}M
                           </div>
                         </div>
-                        <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-semibold transition-all shadow-lg shadow-amber-500/30">
-                          Ver Detalles
-                        </button>
+                        <Link href={`/propiedades/${propiedad.id}`}>
+                          <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-semibold transition-all shadow-lg shadow-amber-500/30">
+                            Ver Detalles
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

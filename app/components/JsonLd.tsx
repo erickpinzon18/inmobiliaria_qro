@@ -2,7 +2,7 @@ export default function JsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    name: "Inmobiliaria Querétaro",
+    name: "Mi Éxito Inmobiliario Querétaro",
     image: "https://inmobiliaria-qro.vercel.app/logo.jpg",
     "@id": "https://inmobiliariaqro.com",
     url: "https://inmobiliariaqro.com",

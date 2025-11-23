@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <h3 className="text-3xl font-bold mb-6">
               <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-300 bg-clip-text text-transparent">
-                Inmobiliaria Querétaro
+                Mi Éxito Inmobiliario Querétaro
               </span>
             </h3>
             <p className="text-gray-400 leading-relaxed mb-6">
@@ -101,7 +101,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-amber-500/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © 2024 Inmobiliaria Querétaro. Todos los derechos reservados.
+              © 2024 Mi Éxito Inmobiliario Querétaro. Todos los derechos reservados.
             </p>
             
             <div className="flex items-center gap-6">
