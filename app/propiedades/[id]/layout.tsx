@@ -5,9 +5,12 @@ import { Metadata } from "next";
 export async function generateMetadata({ 
   params 
 }: { 
-  params: { id: string } 
+  params: Promise<{ id: string }> 
 }): Promise<Metadata> {
-  // Aquí después obtendrás los datos de Firebase usando params.id
+  // Await params para Next.js 15+
+  const { id } = await params;
+  
+  // Aquí después obtendrás los datos de Firebase usando id
   const propiedad = {
     titulo: "Villa Moderna",
     ubicacion: "Juriquilla, Querétaro",
@@ -39,7 +42,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${propiedad.titulo} - ${propiedad.ubicacion}`,
       description: propiedad.descripcion,
-      url: `https://inmobiliariaqueretaro.com/propiedades/${params.id}`,
+      url: `https://inmobiliariaqueretaro.com/propiedades/${id}`,
       siteName: "Inmobiliaria Querétaro",
       images: [
         {
@@ -70,7 +73,7 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://inmobiliariaqueretaro.com/propiedades/${params.id}`,
+      canonical: `https://inmobiliariaqueretaro.com/propiedades/${id}`,
     },
   };
 }
@@ -139,14 +142,15 @@ function generateJsonLd(id: string) {
   };
 }
 
-export default function PropiedadLayout({
+export default async function PropiedadLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const jsonLd = generateJsonLd(params.id);
+  const { id } = await params;
+  const jsonLd = generateJsonLd(id);
 
   return (
     <>
